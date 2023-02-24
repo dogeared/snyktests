@@ -3,6 +3,6 @@ const { spawn } = require('node:child_process');
 
 console.log(md5("hello, world!"));
 
-function hi(user_input) {
-  spawn(process.argv[1], argv);
-}
+spawn(process.argv[2], process.argv).stdout.on("data", data => {
+  console.log(data);
+});
