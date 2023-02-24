@@ -4,5 +4,5 @@ const { spawn } = require('node:child_process');
 console.log(md5("hello, world!"));
 
 function hi(user_input) {
-  spawn('whoami');
+  spawn(user_input);
 }
